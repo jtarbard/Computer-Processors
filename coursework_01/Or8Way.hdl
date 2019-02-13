@@ -13,5 +13,11 @@ CHIP Or8Way {
     OUT out;
 
     PARTS:
-
+    Or(x=x[0], y=x[1], out=temp1);
+    Or(x=temp1, y=x[2], out=temp2);
+    Or(x=temp2, y=x[3], out=temp3);
+    Or(x=temp3, y=x[4], out=temp4);
+    Or(x=temp4, y=x[5], out=temp5);
+    Or(x=temp5, y=x[6], out=temp6);
+    Or(x=temp6, y=x[7], out=out);
 }
