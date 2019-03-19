@@ -15,4 +15,5 @@ CHIP HalfAdder {
     PARTS:
     Xor(x=x, y=y, out=sum);
     And(x=x, y=y, out=carry);
+
 }
